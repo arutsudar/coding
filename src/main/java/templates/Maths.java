@@ -6,6 +6,13 @@ import java.util.List;
 
 public class Maths {
 
+    private static int factorial(int n) {
+        if (n == 0)
+            return 1;
+        else
+            return n * factorial(n-1);
+    }
+
     private static long gcd(long a, long b) {
         return b == 0 ? a : gcd(b, a % b);
     }
