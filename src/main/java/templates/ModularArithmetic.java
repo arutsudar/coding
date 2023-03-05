@@ -19,7 +19,10 @@ public class ModularArithmetic {
     }
 
     /**
-     * (a ^ b) % mod
+     * Function to find modulo inverse of b.
+     * 
+     * The inverse of an integer ‘x’ is another integer ‘y’ such that (x*y) % m = 1 where m is the modulus.
+     * 
      * It returns -1 when inverse doesn't exist
      * modInverse works for prime m
      */
