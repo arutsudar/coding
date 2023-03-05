@@ -55,8 +55,8 @@ public class ModularArithmetic {
      *
      * Source: https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/
      */
-    public static int power(int a, int b, int mod) {
-        int res = 1;
+    public static int power(long a, long b, int mod) {
+        long res = 1;
         a = a % mod; // Update a if it is more than or equal to mod
         if (a == 0)
             return 0; // In case a is divisible by mod;
@@ -68,7 +68,7 @@ public class ModularArithmetic {
             b = b >> 1; // b = b/2
             a = (a * a) % mod;
         }
-        return res;
+        return (int) res;
     }
 
 }
