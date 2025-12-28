@@ -2,8 +2,6 @@ package templates;
 
 public class UnionFind {
 
-
-
     /**
      * Union by rank and, path compression (in Find)
      *
